@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #001f3f;
+  color: #f4f4f4;
+  font-family: "Raleway", sans-serif;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 650px;
+  padding: 5px;
+}
+
+.quote-card {
+  background-color: #062a4d;
+  border: 1px solid #11477d;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.quote-header {
+  border-bottom: 2px solid #11477dae;
+  padding-bottom: 10px;
+}
+.quote-header h1 {
+  opacity: 0.7;
+}
+
+.quote {
+  margin-top: 1.3rem;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.quote p {
+  line-height: 1.4;
+  letter-spacing: 1px;
+}
+.quote .fa-quote-left,
+.quote .fa-quote-right {
+  opacity: 0.5;
+}
+.quote .fa-quote-left {
+  margin-right: 10px;
+}
+.quote .fa-quote-right {
+  margin-left: 10px;
+  align-self: flex-end;
+}
+.autorDiv {
+  margin-top: 1.4rem;
+}
+.authorName {
+  margin-right: 3px;
+  opacity: 0.5;
+}
+.author {
+  color: #2f8ae5e4;
+  font-weight: bold;
+  align-self: flex-end;
+}
+.quote-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+.quote-footer .icons ul {
+  list-style: none;
+  display: flex;
+}
+.quote-footer .icons ul li {
+  margin-right: 10px;
+}
+.quote-footer .icons ul li .fa {
+  font-size: 25px;
+  background-color: #11477dae;
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid #2668a9ae;
+  opacity: 0.6;
+  transition: 250ms;
+  cursor: pointer;
+}
+.quote-footer .icons ul li .fa:hover {
+  opacity: 1;
+  background-color: #3579beae;
+}
+
+.quote-footer .nextQuote {
+  background-color: #3579beae;
+  border: 1px solid #5999d9ae;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 200ms;
+  user-select: none;
+}
+.nextQuote .active {
+  pointer-events: none;
+  background-color: #143a60ae;
+  cursor: progress;
+}
+.quote-footer .nextQuote:hover {
+  background-color: #5588baae;
+}
+.quote-footer .nextQuote:active {
+  position: relative;
+  top: 1px;
+}
